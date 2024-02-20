@@ -1,0 +1,33 @@
+server:
+  port: 8181
+
+management:
+  server:
+    port: 8282
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /admin
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  datasource:
+    name: employee
+    url: jdbc:mysql://localhost:3306/employee
+    username: root
+    password: SecureParas@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: create
+  mvc:
+    static-path-pattern: /swagger*
+  web:
+    resources:
+      static-locations:

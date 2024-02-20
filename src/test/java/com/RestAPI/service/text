@@ -1,0 +1,7 @@
+If Athlete has added 6ft 1 1/8in height
+
+When we export the sheet we are getting 73.125 that is fine
+
+when we upload this sheet in Dashr - Dashr picks only 2 digits after deciaml
+so it will round of 73.125 into 73.13 but in our kb3 system we dont have 73.13
+so our calculation will convert this 73.13 into 73.25 that will become = 6ft 1 1/4
